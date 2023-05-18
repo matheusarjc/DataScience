@@ -95,12 +95,14 @@ que sugerem o uso de letras minúsculas e underscores para separar palavras em n
 
 #### Operadores
 Operadores de Comparação:
-•"==" (igual a): verifica se dois valores são iguais.
-•"!=" (diferente de): verifica se dois valores são diferentes.
-•">" (maior que): verifica se o valor à esquerda é maior que o valor à direita.
-•"<" (menor que): verifica se o valor à esquerda é menor que o valor à direita.
-•">=" (maior ou igual a): verifica se o valor à esquerda é maior ou igual ao valor à direita.
-•"<=" (menor ou igual a): verifica se o valor à esquerda é menor ou igual ao valor à direita.
+<ul>
+<li>"==" (igual a): verifica se dois valores são iguais.</li>
+<li>"!=" (diferente de): verifica se dois valores são diferentes.</li>
+<li>">" (maior que): verifica se o valor à esquerda é maior que o valor à direita.</li>
+<li>"<" (menor que): verifica se o valor à esquerda é menor que o valor à direita.</li>
+<li>">=" (maior ou igual a): verifica se o valor à esquerda é maior ou igual ao valor à direita. </li>
+<li>"<=" (menor ou igual a): verifica se o valor à esquerda é menor ou igual ao valor à direita. </li>
+</ul>
 
 ## Estruturas de Controle em Python
 As estruturas de controle permitem que você controle o fluxo de execução do seu programa com base em condições ou repetições. 
@@ -113,3 +115,45 @@ if condição:
     # código a ser executado se a condição for verdadeira
 else:
     # código a ser executado se a condição for falsa
+
+Exemplo: 
+    idade = 18
+
+    if idade >= 18:
+        print("Você é maior de idade.")
+    else:
+        print("Você é menor de idade.")
+
+#### elif 
+Além do if e do else, você também pode usar a cláusula elif (abreviação de "else if") para testar condições adicionais.
+if condição1:
+    # código a ser executado se a condição1 for verdadeira
+elif condição2:
+    # código a ser executado se a condição2 for verdadeira
+else:
+    # código a ser executado se todas as condições anteriores forem falsas
+
+Exemplo:
+nota = 85
+    if nota >= 90:
+        print("Nota: A")
+    elif nota >= 80:
+        print("Nota: B")
+    elif nota >= 70:
+        print("Nota: C")
+    else:
+        print("Nota: D")
+
+### Loops
+#### for
+O loop for é usado para iterar sobre uma sequência (como uma lista, uma string, um dicionário etc.) ou um objeto iterável.
+A sintaxe básica é a seguinte:
+
+for elemento in sequência:
+    # código a ser executado para cada elemento
+
+Exemplo:
+    frutas = ["maçã", "banana", "laranja"]
+
+    for fruta in frutas:
+        print(fruta)
