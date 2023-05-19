@@ -283,7 +283,7 @@ Variáveis definidas numa função têm escopo local e só podem ser acessadas d
     imprimir_nome()  # Saída: João
     print(nome)  # Erro: nome não está definido
 
-<b><h3>!!Observação</h3></b>: As variáveis locais têm prioridade sobre as variáveis globais com o mesmo nome. 
+<b><h3>!!Observação</h3></b> As variáveis locais têm prioridade sobre as variáveis globais com o mesmo nome. 
 Se uma variável local tiver o mesmo nome de uma variável global, a versão local será usada dentro da função.
 
 ### Documentação de Funções
