@@ -7,9 +7,11 @@ Armazenamento nomeado.
 --> nome = "Matheus"
 
 Possuem alguns tipos de dados embutidos como:
-• Números (Retorna números)
-• Strings (Retorna sequência de caracteres)
-• Boolean (Retorna verdadeiro ou falso)
+<ul>
+<li>Números (Retorna números)</li>
+<li>Strings (Retorna sequência de caracteres)</li>
+<li>Boolean (Retorna verdadeiro ou falso)</li>
+</ul>
 
 Para verificar, use "type":
 idade = 25
