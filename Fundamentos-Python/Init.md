@@ -4,7 +4,7 @@
 ### Variáveis
 Armazenamento nomeado.
 
---> nome = "Matheus"
+    nome = "Matheus"
 
 Possuem alguns tipos de dados embutidos como:
 <ul>
@@ -14,19 +14,24 @@ Possuem alguns tipos de dados embutidos como:
 </ul>
 
 Para verificar, use "type":
-idade = 25
-print(type(idade)) #Saída: <class 'int'>
+
+    idade = 25
+    print(type(idade)) #Saída: <class 'int'>
 
 #### Multidados
 • Em Python, você pode atribuir valores a várias variáveis em uma única linha, separando-os por vírgulas.
+
     nome, idade, cidade = "João", 25, "São Paulo"
 • Python também permite atribuir o mesmo valor a várias variáveis em uma única linha:
+
     x = y = z = 10
 • Também, você pode atualizar o valor de uma variável utilizando o seu valor atual. Por exemplo:
+
     x = 5
     x = x + 1
     print(x)  # Saída: 6
 • Python também oferece operadores de atribuição abreviados para atualizar uma variável com base em sua própria valor. Por exemplo:
+
     x = 5
     x += 1  # Equivalente a x = x + 1
     print(x)  # Saída: 6
