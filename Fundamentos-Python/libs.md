@@ -133,5 +133,77 @@ O Pandas oferece uma ampla gama de funcionalidades para manipular dados, como:
 #### Visualização de Dados
 O Pandas também se integra bem com outras bibliotecas de visualização, como o Matplotlib. Você pode usar o Pandas para preparar os dados e, em seguida, criar gráficos e visualizações com o Matplotlib. Algumas das funções de visualização incluem data.plot(), data.hist(), data.boxplot(), entre outras.
 
+
 ### Matplotlib
 O Matplotlib é uma biblioteca de visualização de dados em Python. Ele permite criar gráficos de alta qualidade, como gráficos de linhas, barras, dispersão, histogramas, entre outros. O Matplotlib é amplamente utilizado para visualizar dados e explorar padrões, tendências e relacionamentos nos dados.
+
+O Matplotlib fornece uma variedade de ferramentas para criar gráficos estáticos, gráficos interativos, visualizações 3D, entre outros.
+
+O Matplotlib é frequentemente importado usando a convenção import matplotlib.pyplot as plt. Ele oferece uma interface semelhante à do MATLAB, permitindo criar gráficos e visualizações de forma fácil e flexível.
+
+#### Gráficos Básicos
+
+<ul>
+<li>Gráfico de Linha: plt.plot(x, </li>
+<li>Gráfico de Dispersão: plt.scatter(x, y)</li>
+<li>Gráfico de Barras: plt.bar(x, y)</li>
+<li>Gráfico de Pizza: plt.pie(data)</li>
+</ul>
+
+#### Personalização de Gráficos
+O Matplotlib permite personalizar diversos aspectos dos gráficos, como título, rótulos dos eixos, estilo das linhas, cores, entre outros. Você pode usar uma variedade de funções para personalizar seus gráficos, como:
+    
+    plt.title("Título do Gráfico") 
+    plt.xlabel("Eixo X")
+    plt.ylabel("Eixo Y")
+
+    plt.plot(x1, y1, label="Dados 1")
+    plt.plot(x2, y2, label="Dados 2")
+    plt.legend()
+    
+    plt.grid()
+    plt.xlim("Limite Eixo X") 
+    plt.ylim("Limite Eixo Y")
+##### Estilo das Linhas e Pontos
+
+    plt.plot(x, y, color='red', linestyle='--', linewidth=2, marker='o', markersize=5)
+
+##### Cores
+
+    plt.plot(x, y, color='blue')
+    plt.fill_between(x, y, color='gray', alpha=0.2)
+
+
+#### Subplots
+Você pode criar múltiplos subplots em uma única figura usando a função plt.subplot(). Isso permite exibir vários gráficos em uma grade, facilitando a comparação e visualização de diferentes conjuntos de dados.
+
+    plt.subplot(nrows, ncols, plot_number)
+
+<ul>
+<li>nrows: número de linhas na grade de subplots.</li>
+<li>ncols: número de colunas na grade de subplots.</li>
+<li>plot_number: número do subplot atual (varia de 1 a nrows * ncols).</li>
+</ul>
+
+Exemplo:
+
+    plt.subplot(2, 2, 1)  # Primeiro subplot
+    plt.plot(x1, y1)
+    
+    plt.subplot(2, 2, 2)  # Segundo subplot
+    plt.plot(x2, y2)
+    
+    plt.subplot(2, 2, 3)  # Terceiro subplot
+    plt.plot(x3, y3)
+    
+    plt.subplot(2, 2, 4)  # Quarto subplot
+    plt.plot(x4, y4)
+Você também pode usar a função plt.subplots() para criar uma grade de subplots e retornar objetos de subplots que podem ser usados posteriormente para personalização adicional.
+
+    fig, axs = plt.subplots(2, 2)  # Cria uma grade de 2x2 subplots
+
+    axs[0, 0].plot(x1, y1)
+    axs[0, 1].plot(x2, y2)
+    axs[1, 0].plot(x3, y3)
+    axs[1, 1].plot(x4, y4)
+
