@@ -1,4 +1,4 @@
-## Bibliotecas úteis (Básico)
+# Bibliotecas úteis (Básico)
 ### NumPy
 O NumPy é uma biblioteca fundamental para computação numérica em Python. Ele fornece suporte para arrays multidimensionais (chamados de ndarrays), 
 além de funções matemáticas e operações de vetorização eficientes. O NumPy é amplamente utilizado em áreas como ciência de dados, computação científica e machine learning.
@@ -98,6 +98,40 @@ O broadcasting também pode ser aplicado a arrays com dimensões diferentes. O N
 O Pandas é uma biblioteca de análise de dados em Python. Ela fornece estruturas de dados flexíveis, como Series e DataFrame, que permitem manipular e analisar dados de forma eficiente. 
 O Pandas é amplamente usado em tarefas de limpeza, transformação, filtragem e análise de dados. Com o Pandas, você pode carregar dados de várias fontes, como arquivos CSV, Excel e SQL, em um DataFrame. 
 
+O Pandas é frequentemente importado usando a convenção import pandas as pd. Ele fornece duas estruturas de dados principais: Series e DataFrame. Uma Series é uma estrutura de dados unidimensional que pode armazenar dados de tipos diferentes, semelhante a uma coluna em uma planilha. Um DataFrame é uma estrutura de dados bidimensional que pode armazenar dados de tipos diferentes em colunas, semelhante a uma planilha ou tabela de banco de dados.
+
+#### Carregando dados
+O Pandas permite carregar dados de várias fontes, como arquivos CSV, Excel, SQL, entre outros. Para carregar dados de um arquivo CSV, você pode usar a função pd.read_csv() e fornecer o caminho do arquivo como argumento. 
+
+    import pandas as pd
+
+    data = pd.read_csv('caminho/para/arquivo.csv')
+
+#### Explorando dados
+Com o Pandas, você pode realizar várias operações para explorar e entender seus dados. Algumas das operações mais comuns incluem:
+<ul>
+<li>Visualizando os primeiros registros do DataFrame: data.head()</li>
+<li>Visualizando os últimos registros do DataFrame: data.tail()</li>
+<li>Obtendo informações sobre o DataFrame: data.info()</li>
+<li>Obtendo estatísticas resumidas do DataFrame: data.describe()</li>
+<li>Acessando colunas específicas do DataFrame: data['coluna']</li>
+<li>Filtrando registros com base em condições: data[data['coluna'] > valor]</li>
+<li>Agrupando e agregando dados: data.groupby('coluna').agg()</li>
+</ul>
+
+#### Manipulação de Dados
+O Pandas oferece uma ampla gama de funcionalidades para manipular dados, como:
+
+<ul>
+<li>Adicionar colunas ao DataFrame: data['nova_coluna'] = valores</li>
+<li>Remover colunas do DataFrame: data.drop('coluna', axis=1)</li>
+<li>Preencher valores ausentes: data.fillna(valor)</li>
+<li>Ordenar o DataFrame com base em uma coluna: data.sort_values('coluna')</li>
+<li>Combinar DataFrames: pd.concat([df1, df2]) ou df1.merge(df2, on='coluna')</li>
+</ul>
+
+#### Visualização de Dados
+O Pandas também se integra bem com outras bibliotecas de visualização, como o Matplotlib. Você pode usar o Pandas para preparar os dados e, em seguida, criar gráficos e visualizações com o Matplotlib. Algumas das funções de visualização incluem data.plot(), data.hist(), data.boxplot(), entre outras.
 
 ### Matplotlib
 O Matplotlib é uma biblioteca de visualização de dados em Python. Ele permite criar gráficos de alta qualidade, como gráficos de linhas, barras, dispersão, histogramas, entre outros. O Matplotlib é amplamente utilizado para visualizar dados e explorar padrões, tendências e relacionamentos nos dados.
