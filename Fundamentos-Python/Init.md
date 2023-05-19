@@ -43,62 +43,61 @@ Permitem armazenar coleções de valores relacionados.
 As listas são coleções ordenadas e mutáveis de itens. Você pode criar uma lista colocando os itens entre colchetes e 
 separando-os por vírgulas.
 
-cores = ["vermelho", "verde", "azul"]
+    cores = ["vermelho", "verde", "azul"]
 
 #### Tuplas
 São semelhantes às listas, mas são imutáveis, ou seja, seus elementos não podem ser alterados após a criação. São definidas
 usando parenteses.
 
-ponto = (2, 3)
+    ponto = (2, 3)
 
 #### Dicionários
 São coleções de pares de chave-valor, onde cada valor é associado a uma chave única. Os dicionários são definidos usando
 chaves e pares de chave-valor separados por dois-pontos.
 
-aluno = {"nome": "Maria", "idade": 20, "curso": "Engenharia"}
+    aluno = {"nome": "Maria", "idade": 20, "curso": "Engenharia"}
 
 ### Operações e Expressões
 #### Operações Matemáticas
-x = 5
-y = 3
-
-soma = x + y
-print(soma)  # Saída: 8
-
-multiplicação = x * y
-print(multiplicação)  # Saída: 15
-
-exponencia = x ** y
-print(resultado)  # Saída: 125
-
-divisao_inteira = x // y
-print(divisao_inteira)  # Saída: 1
-
-divisão = x / y
-print(divisão)  # Saída: 1.6666666666666667
-
-resto = x % y
-print(resto)  # Saída: 2
-
+    x = 5
+    y = 3
+    
+    soma = x + y
+    print(soma)  # Saída: 8
+    
+    multiplicação = x * y
+    print(multiplicação)  # Saída: 15
+    
+    exponencia = x ** y
+    print(resultado)  # Saída: 125
+    
+    divisao_inteira = x // y
+    print(divisao_inteira)  # Saída: 1
+    
+    divisão = x / y
+    print(divisão)  # Saída: 1.6666666666666667
+    
+    resto = x % y
+    print(resto)  # Saída: 2
 !!Observação: O Python permite reatribuir valores a uma variável existente. 
-idade = 25
-print(idade)  # Saída: 25
 
-idade = 30
-print(idade)  # Saída: 30
-
+    idade = 25
+    print(idade)  # Saída: 25
+    
+    idade = 30
+    print(idade)  # Saída: 30
 Uma prática comum ao trabalhar com variáveis é atribuir nomes descritivos que reflitam o seu propósito. 
 Isso torna o código mais legível e compreensível. Por exemplo:
 
-largura_retangulo = 10
-altura_retangulo = 5
-
-area_retangulo = largura_retangulo * altura_retangulo
-print(area_retangulo)  # Saída: 50
-
+    largura_retangulo = 10
+    altura_retangulo = 5
+    
+    area_retangulo = largura_retangulo * altura_retangulo
+    print(area_retangulo)  # Saída: 50
 !!Além disso, ao nomear variáveis em Python, é recomendado seguir as convenções de estilo PEP 8, 
 que sugerem o uso de letras minúsculas e underscores para separar palavras em nomes compostos. Por exemplo:
-"idade_aluno", "nome_usuario".
+
+    "idade_aluno", "nome_usuario".
 
 #### Operadores
 Operadores de Comparação:
