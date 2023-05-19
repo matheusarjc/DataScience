@@ -111,10 +111,10 @@ As estruturas de controle permitem que você controle o fluxo de execução do s
 A estrutura if-else permite que você execute um bloco de código se uma condição for verdadeira e execute um bloco 
 diferente se a condição for falsa. A sintaxe básica é a seguinte:
 
-if condição:
-    # código a ser executado se a condição for verdadeira
-else:
-    # código a ser executado se a condição for falsa
+    if condição:
+        # código a ser executado se a condição for verdadeira
+    else:
+        # código a ser executado se a condição for falsa
 
 Exemplo: 
     idade = 18
@@ -126,15 +126,17 @@ Exemplo:
 
 #### elif 
 Além do if e do else, você também pode usar a cláusula elif (abreviação de "else if") para testar condições adicionais.
-if condição1:
-    # código a ser executado se a condição1 for verdadeira
-elif condição2:
-    # código a ser executado se a condição2 for verdadeira
-else:
-    # código a ser executado se todas as condições anteriores forem falsas
+    
+    if condição1:
+        # código a ser executado se a condição1 for verdadeira
+    elif condição2:
+        # código a ser executado se a condição2 for verdadeira
+    else:
+        # código a ser executado se todas as condições anteriores forem falsas
 
 Exemplo:
-nota = 85
+
+    nota = 85
     if nota >= 90:
         print("Nota: A")
     elif nota >= 80:
@@ -146,14 +148,68 @@ nota = 85
 
 ### Loops
 #### for
-O loop for é usado para iterar sobre uma sequência (como uma lista, uma string, um dicionário etc.) ou um objeto iterável.
+O loop for é usado para iterar sobre uma sequência (como uma lista, uma string, um dicionário, etc.) ou um objeto iterável.
 A sintaxe básica é a seguinte:
 
-for elemento in sequência:
-    # código a ser executado para cada elemento
+    for elemento in sequência:
+        # código a ser executado para cada elemento
 
 Exemplo:
-    frutas = ["maçã", "banana", "laranja"]
 
+    frutas = ["maçã", "banana", "laranja"]
     for fruta in frutas:
         print(fruta)
+
+Nesse exemplo, o loop for percorre a lista frutas e imprime cada elemento (fruta) em uma linha separada.
+!!Observação: você pode utilizar a cláusula else em conjunto com os loops for e while. O bloco de código dentro do else 
+será executado somente se o loop for concluído sem ter sido interrompido por um comando break. Por exemplo:
+    
+    for i in range(5):
+        print(i)
+    else:
+        print("Loop concluído.")
+
+
+#### while
+O loop while é usado para repetir a execução de um bloco de código enquanto uma condição for verdadeira. 
+A sintaxe básica é a seguinte:
+
+    while condição:
+    # código a ser executado enquanto a condição for verdadeira
+
+Exemplo:
+    
+    contador = 0
+    while contador < 5:
+        print(contador)
+        contador += 1
+
+#### break
+O comando break interrompe a execução do loop atual e sai do loop por completo. Por exemplo:
+
+    for i in range(1, 6):
+    if i == 3:
+        break
+    print(i)
+
+#### continue
+O comando continue interrompe a execução da iteração atual do loop e passa para a próxima iteração. Por exemplo:
+
+    for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
+
+
+### try-except
+Exceções são erros que ocorrem durante a execução do programa. Você pode lidar com exceções utilizando a estrutura 
+try-except. O código que pode gerar uma exceção é colocado dentro do bloco try, e o tratamento da exceção é realizado no 
+bloco except. Por exemplo:
+
+    try:
+        resultado = 10 / 0
+    except ZeroDivisionError:
+        print("Erro: divisão por zero.")
+
+!!Observação: Nesse exemplo, o código tenta realizar uma divisão por zero, o que resulta em uma exceção ZeroDivisionError. 
+O bloco except captura essa exceção e imprime a mensagem "Erro: divisão por zero.".
