@@ -167,7 +167,7 @@ Exemplo:
         print(fruta)
 
 Nesse exemplo, o loop for percorre a lista frutas e imprime cada elemento (fruta) em uma linha separada.
-<br>
+
 <b>!!Observação:</b> você pode utilizar a cláusula else em conjunto com os loops for e while. O bloco de código dentro do else 
 será executado somente se o loop for concluído sem ter sido interrompido por um comando break. Por exemplo:
     
@@ -220,3 +220,88 @@ bloco except. Por exemplo:
 
 <b>!!Observação:</b> Nesse exemplo, o código tenta realizar uma divisão por zero, o que resulta em uma exceção ZeroDivisionError. 
 O bloco except captura essa exceção e imprime a mensagem "Erro: divisão por zero.".
+
+## Funções
+### Definindo uma função
+Para criar uma função em Python, você usa a palavra-chave def, seguida pelo nome da função e parênteses contendo os parâmetros, se houver.
+
+    def saudacao(nome):
+    print("Olá, " + nome + "! Bem-vindo(a).")
+
+### Chamando uma função
+Após definir uma função, você pode chamá-la em qualquer lugar do seu código, fornecendo os argumentos necessários.
+
+    saudacao("João")
+
+### Retorno de valor
+Uma função pode retornar um valor usando a palavra-chave return. Isso permite que o resultado da função seja utilizado em outras partes do código.
+
+    def soma(a, b):
+    return a + b
+
+### Parâmetros opcionais
+É possível definir parâmetros opcionais em uma função, atribuindo um valor padrão a eles. Isso permite que você chame a função com ou sem o argumento correspondente.
+
+    def saudacao(nome, saudacao="Olá"):
+    print(saudacao + ", " + nome + "! Bem-vindo(a).")
+
+### Funções lambda
+É uma função pequena e concisa que pode ser definida em uma única linha. Elas são úteis quando você precisa de uma função 
+simples sem a necessidade de definir um bloco de código completo.
+<span> Sintaxe básica:</span>
+
+    lambda argumentos: expressão
+
+<span>Exemplo:</span>
+    
+    quadrado = lambda x: x**2
+
+E então você chama a função da mesma forma:
+
+    resultado = quadrado(5)
+    print(resultado)  # Saída: 25
+
+### Escopo de variáveis
+O escopo de uma variável em Python refere-se à região do programa onde a variável é definida e pode ser acessada.
+#### Escopo global
+Variáveis definidas fora de qualquer função têm escopo global. Isso significa que elas podem ser acessadas de qualquer lugar no programa, incluindo dentro de funções. 
+
+    mensagem = "Olá, mundo!"  # Variável global
+    
+    def imprimir_mensagem():
+        print(mensagem)  # Acesso à variável global
+    
+    imprimir_mensagem()  # Saída: Olá, mundo!
+
+#### Escopo local
+Variáveis definidas numa função têm escopo local e só podem ser acessadas dentro dessa função.
+
+    def imprimir_nome():
+        nome = "João"  # Variável local
+        print(nome)
+    
+    imprimir_nome()  # Saída: João
+    print(nome)  # Erro: nome não está definido
+
+<b><h3>!!Observação</h3></b>: As variáveis locais têm prioridade sobre as variáveis globais com o mesmo nome. 
+Se uma variável local tiver o mesmo nome de uma variável global, a versão local será usada dentro da função.
+
+### Documentação de Funções
+A documentação de funções é uma prática importante para escrever código legível e compreensível. Em Python, é comum usar docstrings para documentar funções. 
+Uma docstring é uma string de várias linhas que descreve o propósito, os parâmetros, os valores de retorno e qualquer outra informação relevante sobre a função.
+
+    def soma(a, b):
+    """
+    Retorna a soma de dois números.
+
+    Args:
+        a (int): O primeiro número.
+        b (int): O segundo número.
+
+    Returns:
+        int: A soma de a e b.
+    """
+    return a + b
+A docstring é colocada imediatamente após a definição da função, entre três aspas triplas. Ela pode ser acessada posteriormente usando o atributo especial __doc__ da função:
+
+    print(soma.__doc__)
