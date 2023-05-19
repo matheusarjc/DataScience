@@ -168,7 +168,7 @@ Exemplo:
 
 Nesse exemplo, o loop for percorre a lista frutas e imprime cada elemento (fruta) em uma linha separada.
 <br/>
-!!Observação: você pode utilizar a cláusula else em conjunto com os loops for e while. O bloco de código dentro do else 
+<b>!!Observação:</b> você pode utilizar a cláusula else em conjunto com os loops for e while. O bloco de código dentro do else 
 será executado somente se o loop for concluído sem ter sido interrompido por um comando break. Por exemplo:
     
     for i in range(5):
@@ -218,5 +218,5 @@ bloco except. Por exemplo:
     except ZeroDivisionError:
         print("Erro: divisão por zero.")
 
-!!Observação: Nesse exemplo, o código tenta realizar uma divisão por zero, o que resulta em uma exceção ZeroDivisionError. 
+<b>!!Observação:</b> Nesse exemplo, o código tenta realizar uma divisão por zero, o que resulta em uma exceção ZeroDivisionError. 
 O bloco except captura essa exceção e imprime a mensagem "Erro: divisão por zero.".
