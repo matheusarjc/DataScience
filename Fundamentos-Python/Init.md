@@ -167,7 +167,7 @@ Exemplo:
         print(fruta)
 
 Nesse exemplo, o loop for percorre a lista frutas e imprime cada elemento (fruta) em uma linha separada.
-<br/>
+<br>
 <b>!!Observação:</b> você pode utilizar a cláusula else em conjunto com os loops for e while. O bloco de código dentro do else 
 será executado somente se o loop for concluído sem ter sido interrompido por um comando break. Por exemplo:
     
