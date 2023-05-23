@@ -32,3 +32,19 @@ Exemplo de aplicação: O número de chamadas recebidas em uma central telefôni
 ![distribuicaodepoisson.png](..%2Futilidades%2Fdistribuicaodepoisson.png)
 
 O gráfico resultante mostrará o histograma das amostras aleatórias (barras) e a curva de distribuição de Poisson teórica (pontos). O eixo x representa o número de chamadas e o eixo y representa a probabilidade.
+
+## Testes de Hipóteses
+Um teste de hipótese é uma ferramenta estatística que nos permite tomar decisões com base em dados amostrais.
+
+### Etapas:
+#### Formulação de Hipóteses
+<p>No teste de hipótese, formulamos duas hipóteses: a hipótese nula (H0) e a hipótese alternativa (H1). A hipótese nula geralmente representa a ausência de um efeito ou diferença, enquanto a hipótese alternativa representa o efeito ou diferença que estamos interessados em provar.</p>
+
+#### Seleção do Nível de Significância:
+<p>O nível de significância (alfa) é a probabilidade de rejeitar a hipótese nula quando ela é verdadeira. Um nível de significância comum é 0,05, o que significa que estamos dispostos a cometer um erro de 5% ao rejeitar a hipótese nula.</p>
+
+#### Cálculo do Valor-p:
+<p>O valor-p é a probabilidade de observar os dados amostrais (ou algo mais extremo) sob a hipótese nula. Calculamos o valor-p com base na distribuição de probabilidade relevante para o teste estatístico em questão.</p>
+
+#### Interpretação e Decisão Estatística:
+<p>Com base no valor-p, comparamos com o nível de significância selecionado. Se o valor-p for menor do que o nível de significância, rejeitamos a hipótese nula em favor da hipótese alternativa. Caso contrário, não temos evidências suficientes para rejeitar a hipótese nula.</p>
