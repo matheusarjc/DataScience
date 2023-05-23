@@ -10,3 +10,5 @@ com base em informações limitadas obtidas de uma amostra representativa dessa 
 A distribuição normal, também conhecida como curva em forma de sino, é amplamente utilizada em Estatística Inferencial. É caracterizada por sua forma simétrica e unimodal, com a média, o desvio padrão e a forma da curva normal completamente determinados.
 
 Exemplo de aplicação: A altura das pessoas em uma população normalmente distribuída.
+
+<img src="![distribuicaonormal.png](..%2Futilidades%2Fdistribuicaonormal.png)" />
