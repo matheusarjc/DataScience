@@ -23,3 +23,10 @@ Exemplo de aplicação: O número de acertos em um teste de múltipla escolha, o
 ![distribuicaobinomial.png](..%2Futilidades%2Fdistribuicaobinomial.png)
 
 O gráfico resultante mostrará o histograma das amostras aleatórias (barras) e a curva de distribuição binomial teórica (pontos). O eixo x representa o número de acertos e o eixo y representa a probabilidade.
+
+### Distribuição de Poisson
+A distribuição de Poisson é usada para modelar eventos raros que ocorrem em uma taxa constante. É caracterizada por um único parâmetro lambda (λ), que representa a taxa média de ocorrência do evento.
+
+Exemplo de aplicação: O número de chamadas recebidas em uma central telefônica em um determinado intervalo de tempo.
+
+![distribuicaodepoisson.png](..%2Futilidades%2Fdistribuicaodepoisson.png)
