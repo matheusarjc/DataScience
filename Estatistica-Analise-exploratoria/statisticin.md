@@ -12,3 +12,14 @@ A distribuição normal, também conhecida como curva em forma de sino, é ampla
 Exemplo de aplicação: A altura das pessoas em uma população normalmente distribuída.
 
 ![distribuicaonormal.png](..%2Futilidades%2Fdistribuicaonormal.png)
+
+O gráfico resultante mostrará o histograma das amostras aleatórias (barras) e a curva de distribuição normal teórica (linha vermelha). O eixo x representa os valores e o eixo y representa a densidade de probabilidade.
+
+### Distribuição Binomial
+A distribuição binomial modela experimentos que têm dois resultados possíveis: sucesso ou fracasso. Ela é caracterizada por dois parâmetros: o número de ensaios (n) e a probabilidade de sucesso (p).
+
+Exemplo de aplicação: O número de acertos em um teste de múltipla escolha, onde cada pergunta tem apenas duas opções de resposta.
+
+![distribuicaobinomial.png](..%2Futilidades%2Fdistribuicaobinomial.png)
+
+O gráfico resultante mostrará o histograma das amostras aleatórias (barras) e a curva de distribuição binomial teórica (pontos). O eixo x representa o número de acertos e o eixo y representa a probabilidade.
