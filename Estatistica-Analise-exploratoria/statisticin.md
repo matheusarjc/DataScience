@@ -30,3 +30,5 @@ A distribuição de Poisson é usada para modelar eventos raros que ocorrem em u
 Exemplo de aplicação: O número de chamadas recebidas em uma central telefônica em um determinado intervalo de tempo.
 
 ![distribuicaodepoisson.png](..%2Futilidades%2Fdistribuicaodepoisson.png)
+
+O gráfico resultante mostrará o histograma das amostras aleatórias (barras) e a curva de distribuição de Poisson teórica (pontos). O eixo x representa o número de chamadas e o eixo y representa a probabilidade.
