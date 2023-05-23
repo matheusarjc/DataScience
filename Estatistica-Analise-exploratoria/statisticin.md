@@ -11,4 +11,4 @@ A distribuição normal, também conhecida como curva em forma de sino, é ampla
 
 Exemplo de aplicação: A altura das pessoas em uma população normalmente distribuída.
 
-<img src="![distribuicaonormal.png](..%2Futilidades%2Fdistribuicaonormal.png)" />
+![distribuicaonormal.png](..%2Futilidades%2Fdistribuicaonormal.png)
